@@ -1,0 +1,914 @@
+:root{
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Releway", sans-serif;
+    background-color: #181c23;
+    scroll-behavior: smooth;
+  }
+
+  textarea:focus,
+  input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #000000;
+    padding: 2%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Releway", sans-serif;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+
+  /* HEADER */
+
+  header {
+    padding: 0px;
+    background-color: #0d0f13;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  
+  .logo__busqueda {
+    width: 601px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 425px) {
+    .logo__busqueda {
+        margin: 0 1rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .logo__busqueda {
+        margin: 0;
+    }
+}
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 43px;
+    width: 43px;
+    padding-bottom: 5px;
+  }
+  
+  .logo p {
+    font-family: 'Great Vibes';
+    font-size: 32px;
+    font-weight: bolder;
+    color: #ffffff;
+  }
+  
+  .logo .logo__rojo {
+    color: #9f1e22;
+  }
+  
+  .logo__busqueda input {
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10%;
+    width: 390px;
+    height: 28px;
+    border-radius: 30px;
+    padding: 6px 8px;
+    border: none;
+    background-color: #9f1e22;
+    background-image: url("../sinfulsweets-alurachallenge/assets/lupa-negro.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 320px;
+  }
+  
+  @media screen and (min-width: 425px) {
+    .logo__busqueda input{
+      display: none;
+    }
+}
+
+  @media screen and (min-width: 768px) {
+    .logo__busqueda input {
+      display: flex;
+    }
+}
+
+  .login {
+    font-family: 'Raleway';
+    font-size: 14px;
+    width: 600px;
+    display: flex;
+    justify-content: end;
+    color: #ffffff;
+  }
+  
+  @media screen and (min-width: 425px) {
+    .login {
+        margin: 0 1rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .login {
+        margin: 0;
+    }
+  }
+
+  .login button {
+    width: 162px;
+    height: 38px;
+    background: none;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .login button:hover {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-color: #9f1e22;
+  }
+
+  /*BANNER*/
+
+  .destaque {
+    height: 296px;
+    background-image: url(../sinfulsweets-alurachallenge/assets/banner-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 32px 32px 10px 32px;
+  }
+
+  @media screen and (min-width: 425px) {
+    .destaque {
+        position: relative;
+    }
+  }
+
+  .banner {
+    width: 751px;
+    height: 261px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  @media screen and (min-width: 425px) {
+    .banner {
+        width: fit-content;
+        padding-left: 2rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .banner {
+      padding-left: 120px;
+    }
+}
+
+  .banner h1 {
+    color: #ffffff;
+    font-family: 'Ysabeau SC';
+    font-size: 52px;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px #323131, 5px 4px 0px rgb(0 0 0 / 15%);
+  }
+
+  .banner h4 {
+    color: #ffffff;
+    font-family: 'Ysabeau SC';
+    font-size: 25px;
+    padding-bottom: 1rem;
+    text-shadow: 2px 2px 0px #323131, 5px 4px 0px rgb(0 0 0 / 15%);
+  }
+
+  .banner button {
+    background-color: #9f1e22;
+    border: none;
+    color: #ffffff;
+    height: 51px;
+    width: 130px;
+    font-family: 'Raleway';
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+  }
+
+  .banner button:hover{
+    background-color: #fff;
+    color: #9f1e22;
+  }
+
+  /*PRODUCTOS1*/
+
+  .main {
+    padding: 2rem 0;
+  }
+
+  .postres__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3.5rem 0rem 2.9rem;
+  }
+
+  .postres__title {
+    font-family: 'Raleway';
+    font-size: 32px;
+    font-weight: 700;
+    color: #9f1e22;
+    margin: 0;
+  }
+
+  .postres__enlace {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .postres__enlace img {
+    padding-left: 1rem;
+    width: 16px;
+    height: 16px;
+  }
+
+  /*CARDS*/
+
+  .card__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 1rem;
+    padding: 0 1rem 1rem 3rem;
+  }
+
+  @media screen and (min-width: 425px) {
+    .card__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      margin-top: 1rem;
+      padding: 0 1rem 1rem 3rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .card__grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      margin-top: 1rem;
+      padding: 0 1rem 1rem 3rem;
+    }
+  }
+
+  .card {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .card__imagen {
+    position: absolute;
+    width: 176px;
+    height: 174px;
+    object-fit: cover;
+  }
+
+  .card__text {
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .card__price {
+    font-family: 'Raleway';
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .card__enlace {
+    font-size: 16px;
+    font-weight: 700;
+    color: #9f1e22;
+  }
+  
+/*PRODUCTOS2*/
+
+  .pasteles__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3.5rem 0rem 2.9rem;
+  }
+
+  .pasteles__title {
+    font-family: 'Raleway';
+    font-size: 32px;
+    font-weight: 700;
+    color: #9f1e22;
+    margin: 0;
+  }
+
+  .pasteles__enlace {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .pasteles__enlace img {
+    padding-left: 1rem;
+    width: 16px;
+    height: 16px;
+  }
+
+/*PRODUCTOS3*/
+
+.cupcakes {
+  padding-bottom: 2rem;
+}
+
+.cupcakes__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3.5rem 0rem 2.9rem;
+}
+
+.cupcakes__title {
+  font-family: 'Raleway';
+  font-size: 32px;
+  font-weight: 700;
+  color: #9f1e22;
+  margin: 0;
+}
+
+.cupcakes__enlace {
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cupcakes__enlace img {
+  padding-left: 1rem;
+  width: 16px;
+  height: 16px;
+}
+
+/*CONTACTO*/
+
+.contacto {
+  background-color: #0d0f13;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 425px) {
+  .contacto {
+      padding-left: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacto {
+      padding-left: 0;
+  }
+}
+
+.contacto__grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+@media screen and (min-width: 425px) {
+  .contacto__grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacto__grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.referencia {
+  display: flex;
+  width: 350px;
+  margin: 20px 0 0 0;
+  padding-top: 1rem;
+  padding-left: 4rem;
+}
+
+@media screen and (min-width: 425px) {
+  .referencia {
+      padding-left: 9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .referencia {
+      padding-left: 4rem;
+  }
+}
+
+.referencia img {
+  width: 45px;
+  height: 40px;
+  padding-bottom: 2rem;
+}
+
+.referencia p {
+  font-family: 'Great Vibes';
+  font-size: 28px;
+  font-weight: bolder;
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
+.logo__blanco {
+  color: #ffffff;
+}
+
+.logo__sweets {
+  color: #9f1e22;
+}
+
+.contacto__enlaces {
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.contacto__link {
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 40px;
+  transition: color 300ms ease-in-out;
+  text-align: center;
+}
+
+@media screen and (min-width: 425px) {
+  .contacto__link {
+      padding-left: 9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacto__link {
+      padding-left: 0;
+  }
+}
+
+.contacto__link:hover {
+  color: #9f1e22;
+  cursor: pointer;
+}
+
+.form {
+  padding-right: 8rem;
+}
+
+.form__input {
+  border-style: none;
+}
+
+.form__title {
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 1.8rem 0 1rem 0;
+}
+
+.form__container-inputs {
+  margin-bottom: 5px;
+}
+
+.form__mask {
+  background-color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 8rem;
+  border-radius: 4px;
+  border-bottom: 1px solid #9f1e22;
+  transition: border-bottom 200ms ease;
+}
+
+.form__mask:hover {
+  border-bottom: 4px solid #9f1e22;
+}
+
+.form__name {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a2a2a2;
+  height: 0.5rem;
+  width: 30rem;
+}
+
+.form__input {
+  all: unset;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form__textarea {
+  all: unset;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  height: 5rem;
+}
+
+.form__enviar {
+  all: unset;
+  padding: 1.2rem 1.6rem;
+  background-color: #9f1e22;
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 200ms ease-in-out;
+  margin-top: 1rem; 
+}
+
+.form__enviar:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #9f1e22;
+}
+
+.footer {
+  padding: 2rem 0;
+  background-color: #000000;
+}
+
+.footer__text {
+  font-family: 'Raleway';
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/*LOGIN*/
+
+.login-none {
+  display: none;
+}
+
+.logo__busqueda-login {
+  width: 601px;
+  display: flex;
+  align-items: center;
+  padding-right: 42rem;
+}
+
+.logo__busqueda-login input {
+  font-family: 'Raleway';
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 10%;
+  width: 390px;
+  height: 28px;
+  border-radius: 30px;
+  padding: 6px 8px;
+  border: none;
+  background-color: #9f1e22;
+  background-image: url("../AluraGeek/assets/lupa-negro.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 320px;
+}
+
+.form-login__flex {
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.form-login__title {
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.form-login__mask {
+  padding: 1.4rem 5rem;
+  background-color: #ffffff;
+  border-bottom: 4px solid #9f1e22;
+  transition: border-bottom 200ms ease-in-out;
+}
+
+.form-login__mask:hover {
+  border-bottom: 4px solid #000000;
+}
+
+.form-login__input {
+  all: unset;
+  font-family: 'Raleway';
+  font-size: 16px;
+  color: #0d0f13;
+  font-weight: 400;
+  width: 100%;
+}
+
+.form-login__send {
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 1.2rem 9rem;
+  background-color: #9f1e22;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.form-login__send:hover{
+    transition: all 1s ease-in-out;
+    background-color: #ffffff;
+    color: #9f1e22;
+}
+
+
+/*ADD PRODUCTS*/
+
+.container__add{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 425px) {
+  .container__add {
+      width: 65%;
+      padding-left: 3rem;
+      padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__add {
+      width: 100%;
+      padding-left: 0;
+  }
+}
+
+.add__title {
+  font-family: 'Raleway';
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.form-add__mask {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 1rem;
+  height: 3rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border-bottom: 1px solid #9f1e22;
+  transition: border-bottom 200ms ease;
+}
+
+.form-add__label {
+  font-family: 'Raleway';
+  font-size: 12px;
+  font-weight: 400;
+  color: #a2a2a2;
+}
+
+.form-add__input {
+  all: unset;
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  width: 100%;
+}
+
+.form-add__select {
+  all: unset;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a2a2a2;
+  margin-top: 5rem;
+}
+
+.form-add__textarea {
+  all: unset;
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  width: 100%;
+  max-height: 8rem;
+}
+
+.form-add__submit {
+  all: unset;
+  width: 100%;
+  color: #ffffff;
+  background-color: #9f1e22;
+  text-align: center;
+  padding: 1.3rem 0;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.form-add__submit:hover{
+    transition: all 1s ease-in-out;
+    background-color: #ffffff;
+    color: #9f1e22;
+}
+
+.add-products button {
+  background-color: #9f1e22;
+  border: none;
+  color: #ffffff;
+  height: 3rem;
+  width: 10rem;
+  font-family: 'Raleway';
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.add-products button:hover{
+  background-color: #fff;
+  color: #9f1e22;
+}
+
+/*EDIT PRODUCTS*/
+
+.products {
+  padding-bottom: 2rem;
+}
+
+.products__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3.5rem 0rem 2.9rem;
+}
+
+.products__title {
+  font-family: 'Raleway';
+  font-size: 32px;
+  font-weight: 700;
+  color: #9f1e22;
+  margin: 0;
+}
+
+.products__enlace {
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+}
+
+.products__enlace img {
+  padding-left: 1rem;
+  width: 16px;
+  height: 16px;
+}
+
+.login-edit {
+  display: none;
+}
+
+.logo__busqueda-edit {
+  width: 601px;
+  display: flex;
+  align-items: center;
+  padding-right: 42rem;
+}
+
+.logo__busqueda-edit input {
+  font-family: 'Raleway';
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 10%;
+  width: 390px;
+  height: 28px;
+  border-radius: 30px;
+  padding: 6px 8px;
+  border: none;
+  background-color: #9f1e22;
+  background-image: url("../AluraGeek/assets/lupa-negro.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 320px;
+}
+
+.menu-admin {
+  font-family: 'Raleway';
+  font-size: 14px;
+  width: 600px;
+  display: flex;
+  justify-content: end;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 425px) {
+  .menu-admin {
+      margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-admin {
+      margin: 0;
+  }
+}
+
+.menu-admin button {
+  width: 13rem;
+  height: 3rem;
+  background: none;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.menu-admin button:hover {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  background-color: #9f1e22;
+}
+
+.icons__card {
+  position: absolute;
+  padding-left: 6.5rem;
+  margin: 5px;
+}
+
+.icon-button {
+  padding: 0 3px;
+}
